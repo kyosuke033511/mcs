@@ -1,0 +1,135 @@
+@import "mixin.scss";
+
+.first-view{
+  width: 100%;
+  height: auto;
+}
+
+.main{
+  width: 80%;
+  margin: 0 auto;
+  .philosophy{
+    @include sub-title;
+    .box{
+      height: 400px;
+      margin: 0 auto;
+      .item{
+        position: absolute;
+        img{
+          width: 600px;
+          height: 400px;
+        }
+        .text{
+          position: relative;
+          font-size: 2rem;
+          width: 50%;
+          top: 160%;
+          left: 75%;
+          transform: translate(-75%,-160%);
+          padding: 30px;
+          background-color: rgba(255,255,255,0.7);
+        }
+      }
+    }
+  }
+  .strengths{
+    @include sub-title;
+    .items{
+      display: flex;
+      flex: row;
+      justify-content: space-between;
+      .item{
+        background-color: #fbdd4a;
+        width: 25%;
+        padding-top: 25%;
+        position: relative;
+        border-radius: 50%;
+        .content{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          text-align: center;
+          font-size: 2rem;
+          color: #FFFFFF;
+          .big{
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+  .news{
+    @include sub-title;
+    .items{
+      .item{
+        display: flex;
+        flex: row;
+        margin: 0 auto;
+        font-size: 2.2rem;
+        .left{
+          display: flex;
+          flex-flow: column;
+          text-align: center;
+          .date{
+
+          }
+          .news-box{
+            background: #4d28e9;
+            color: #FFF;
+            border-radius: 5px;
+          }
+        }
+        .right{
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+  .banner{
+    margin-top: 100px;
+    text-align: center;
+    img{
+      width: 60%;
+      object-fit: contain;
+    }
+  }
+}
+
+//タブレット
+@media screen and (max-width: 1024px){
+  .main{
+    .philosophy{
+      .box{
+        height: 350px;
+        .item{
+          img{
+          width: 500px;
+          height: 350px;
+        }
+          .text{
+            top: 130%;
+            left: 75%;
+            transform: translate(-75%,-130%);
+          }
+        }
+      }
+    }
+    .strengths{
+      .items{
+        .item{
+          .content{
+            font-size: 1.6rem;
+            .big{
+              font-size: 2.6rem;
+            }
+          }
+        }
+      }
+    }
+    .banner{
+      margin-top: 100px;
+      text-align: center;
+    }
+  }
+}

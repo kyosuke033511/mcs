@@ -1,0 +1,139 @@
+.first-view {
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+.main .philosophy .sub-title {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  border-bottom: 5px solid #fbdd4a;
+  margin: 70px auto 60px;
+  text-align: center;
+  color: #01254a;
+}
+.main .philosophy .sub-title .small {
+  font-size: 1.8rem;
+}
+.main .philosophy .box {
+  height: 400px;
+  margin: 0 auto;
+}
+.main .philosophy .box .item {
+  position: absolute;
+}
+.main .philosophy .box .item img {
+  width: 600px;
+  height: 400px;
+}
+.main .philosophy .box .item .text {
+  position: relative;
+  font-size: 2rem;
+  width: 50%;
+  top: 160%;
+  left: 75%;
+  transform: translate(-75%, -160%);
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.main .strengths .sub-title {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  border-bottom: 5px solid #fbdd4a;
+  margin: 70px auto 60px;
+  text-align: center;
+  color: #01254a;
+}
+.main .strengths .sub-title .small {
+  font-size: 1.8rem;
+}
+.main .strengths .items {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+.main .strengths .items .item {
+  background-color: #fbdd4a;
+  width: 25%;
+  padding-top: 25%;
+  position: relative;
+  border-radius: 50%;
+}
+.main .strengths .items .item .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+.main .strengths .items .item .content .big {
+  font-size: 3rem;
+}
+.main .news .sub-title {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  border-bottom: 5px solid #fbdd4a;
+  margin: 70px auto 60px;
+  text-align: center;
+  color: #01254a;
+}
+.main .news .sub-title .small {
+  font-size: 1.8rem;
+}
+.main .news .items .item {
+  display: flex;
+  flex: row;
+  margin: 0 auto;
+  font-size: 2.2rem;
+}
+.main .news .items .item .left {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+.main .news .items .item .left .news-box {
+  background: #4d28e9;
+  color: #FFF;
+  border-radius: 5px;
+}
+.main .news .items .item .right {
+  margin-left: 100px;
+}
+.main .banner {
+  margin-top: 100px;
+  text-align: center;
+}
+.main .banner img {
+  width: 60%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1024px) {
+  .main .philosophy .box {
+    height: 350px;
+  }
+  .main .philosophy .box .item img {
+    width: 500px;
+    height: 350px;
+  }
+  .main .philosophy .box .item .text {
+    top: 130%;
+    left: 75%;
+    transform: translate(-75%, -130%);
+  }
+  .main .strengths .items .item .content {
+    font-size: 1.6rem;
+  }
+  .main .strengths .items .item .content .big {
+    font-size: 2.6rem;
+  }
+  .main .banner {
+    margin-top: 100px;
+    text-align: center;
+  }
+}

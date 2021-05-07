@@ -1,0 +1,59 @@
+.title-view {
+  width: 100%;
+  text-align: center;
+  background: url("../images/H2.jpg");
+  background-position: 50% 45%;
+}
+.title-view .bg {
+  display: inline-block;
+  line-height: 110px;
+  font-size: 4rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0 30px;
+  color: #01254a;
+}
+
+.main {
+  width: 65%;
+  margin: 0 auto;
+}
+.main .content .sub-title {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  border-bottom: 5px solid #fbdd4a;
+  margin: 70px auto 60px;
+  text-align: center;
+  color: #01254a;
+}
+.main .content .sub-title .small {
+  font-size: 1.8rem;
+}
+.main .content .items .item {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.main .content .items .item .image img {
+  width: 350px;
+  height: auto;
+}
+.main .content .items .item .box {
+  width: 350px;
+  margin-left: 50px;
+}
+.main .content .items .item .box h6 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+.main .content .items .item .box p {
+  font-size: 1.6rem;
+}
+.main .content .top {
+  margin: 20px 0;
+}
+.main .content .bottom {
+  margin: 40px 0;
+}
+.main .content .text {
+  font-size: 1.4rem;
+}

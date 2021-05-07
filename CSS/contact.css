@@ -1,0 +1,56 @@
+.title-view {
+  width: 100%;
+  text-align: center;
+  background: url("../images/H2.jpg");
+  background-position: 50% 45%;
+}
+.title-view .bg {
+  display: inline-block;
+  line-height: 110px;
+  font-size: 4rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0 30px;
+  color: #01254a;
+}
+
+.main {
+  width: 65%;
+  margin: 0 auto;
+}
+.main .contact .sub-title {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  border-bottom: 5px solid #fbdd4a;
+  margin: 70px auto 60px;
+  text-align: center;
+  color: #01254a;
+}
+.main .contact .sub-title .small {
+  font-size: 1.8rem;
+}
+.main .contact .text {
+  font-size: 1.8rem;
+}
+.main .contact .item {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+.main .contact .item input {
+  width: 50%;
+}
+.main .contact .item textarea {
+  width: 50%;
+  height: 100px;
+}
+.main .contact .item button {
+  width: 50%;
+  height: 50px;
+  border-radius: 25px;
+  background: #fbdd4a;
+  color: #FFF;
+  margin-top: 40px;
+  border: 0px;
+}
+.main .contact .item button:hover {
+  cursor: pointer;
+}
