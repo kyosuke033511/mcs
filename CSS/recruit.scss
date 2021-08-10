@@ -1,0 +1,48 @@
+@import "mixin.scss";
+
+@include title-view(11rem,4rem,3rem);
+
+.main{
+  width: 65%;
+  margin: 0 auto;
+  .recruit{
+    @include sub-title(3rem,3.2rem,70px,60px,1.8rem);
+    .text{
+      font-size: 1.8rem;
+    }
+    .btn{
+      margin-top: 30px;
+      background: #fbdd4a;
+      padding: 10px 50px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    a{
+      display: inline-block;
+      font-size: 1.8rem;
+      color: #FFF;
+    }
+  }
+}
+
+//スマホ
+@media screen and (max-width: 599px){
+  @include title-view(6rem,2.4rem,1.5rem);
+  .main{
+    .recruit{
+      @include sub-title(2rem,2.1rem,40px,30px,1.4rem);
+      .text{
+        font-size: 1.4rem;
+      }
+      .btn{
+        margin-top: 30px;
+        background: #fbdd4a;
+        padding: 10px 30px;
+        border-radius: 10px;
+      }
+      a{
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

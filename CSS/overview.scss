@@ -1,0 +1,108 @@
+@import "mixin.scss";
+
+@include title-view(11rem,4rem,3rem);
+
+
+.main{
+  width: 80%;
+  margin: 0 auto;
+  .over-view{
+    @include sub-title(3rem,3.2rem,70px,60px,1.8rem);
+    .item{
+      width: 60%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      tr{
+        font-size: 2rem;
+        line-height: 3.5rem;
+        &:nth-child(odd){
+          background: #FFF;
+        }
+      }
+    }
+  }
+  .history{
+    @include sub-title(3rem,3.2rem,70px,60px,1.8rem);
+    .item{
+      width: 60%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      tr{
+        font-size: 2rem;
+        line-height: 3.5rem;
+        &:nth-child(odd){
+          background: #FFF;
+        }
+      }
+    }
+  }
+  .access{
+    @include sub-title(3rem,3.2rem,70px,60px,1.8rem);
+    .item{
+      display: flex;
+      justify-content: center;
+      iframe{
+        width: 40%;
+      }
+      .text{
+        margin-left: 50px;
+        width: 40%;
+        border-collapse: collapse;
+        tr{
+          font-size: 2rem;
+          line-height: 3.5rem;
+          text-align: center;
+          &:nth-child(odd){
+            background: #FFF;
+          }
+        }
+      }
+    }
+  }
+}
+
+//スマホ
+@media screen and (max-width: 599px){
+  @include title-view(6rem,2.4rem,1.5rem);
+  .main{
+    .over-view{
+      @include sub-title(2rem,2.1rem,40px,30px,1.4rem);
+      .item{
+        width: 100%;
+        tr{
+          font-size: 1.4rem;
+          line-height: 2.5rem;
+        }
+      }
+    }
+    .history{
+      @include sub-title(2rem,2.1rem,40px,30px,1.4rem);
+      .item{
+        width: 100%;
+        tr{
+          font-size: 1.4rem;
+          line-height: 2.5rem;
+        }
+      }
+    }
+    .access{
+      @include sub-title(2rem,2.1rem,40px,30px,1.4rem);
+      .item{
+        flex-flow: column;
+        align-item: center;
+        iframe{
+          width: 100%;
+        }
+        .text{
+          margin: 30px 0 0;
+          width: 100%;
+          border-collapse: collapse;
+          tr{
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.title-view {
+  width: 100%;
+  text-align: center;
+  background: url("../images/H2.jpg");
+  background-position: 50% 45%;
+}
+.title-view .bg {
+  display: inline-block;
+  line-height: 11rem;
+  font-size: 4rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0 3rem;
+  color: #01254a;
+}
+
+.main {
+  width: 65%;
+  margin: 0 auto;
+}
+.main .recruit .sub-title {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  margin: 70px auto 60px;
+  text-align: center;
+  color: #01254a;
+  font-style: italic;
+}
+.main .recruit .sub-title .small {
+  font-size: 1.8rem;
+}
+.main .recruit .text {
+  font-size: 1.8rem;
+}
+.main .recruit .btn {
+  margin-top: 30px;
+  background: #fbdd4a;
+  padding: 10px 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.main .recruit a {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #FFF;
+}
+
+@media screen and (max-width: 599px) {
+  .title-view {
+    width: 100%;
+    text-align: center;
+    background: url("../images/H2.jpg");
+    background-position: 50% 45%;
+  }
+  .title-view .bg {
+    display: inline-block;
+    line-height: 6rem;
+    font-size: 2.4rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0 1.5rem;
+    color: #01254a;
+  }
+
+  .main .recruit .sub-title {
+    font-size: 2rem;
+    line-height: 2.1rem;
+    margin: 40px auto 30px;
+    text-align: center;
+    color: #01254a;
+    font-style: italic;
+  }
+  .main .recruit .sub-title .small {
+    font-size: 1.4rem;
+  }
+  .main .recruit .text {
+    font-size: 1.4rem;
+  }
+  .main .recruit .btn {
+    margin-top: 30px;
+    background: #fbdd4a;
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
+  .main .recruit a {
+    font-size: 1.6rem;
+  }
+}
