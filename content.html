@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
+  <meta content='width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum=1.0' name='viewport'>
   <title>株式会社エムシーエス|事業内容</title>
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/content.css">
@@ -9,14 +10,30 @@
 <body>
   <header class="header">
     <a href="index.html">
-      <img src="images/company_logo.svg" height="85" alt="logo">
+      <img src="images/company_logo.svg" alt="logo">
     </a>
+    <!-- PC,Tablet -->
     <nav class="nav">
       <li><a href="overview.html">会社概要</a></li>
       <li><a href="content.html">事業内容</a></li>
       <li><a href="recruit.html">採用情報</a></li>
       <li><a href="contact.html">お問い合わせ</a></li>
     </nav>
+    <!-- iphone -->
+    <div class="iphone-only">
+      <a href="#sidemenu" class="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </a>
+      <nav id="sidemenu" class="sidenavs">
+      <a href="#" class="close-btn">&times;</a>
+        <a href="overview.html">会社概要</a>
+        <a href="content.html">事業内容</a>
+        <a href="recruit.html">採用情報</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+    </div>
   </header>
   <div class="title-view"><p class="bg">事業内容</p></div>
   <main class="main">
